@@ -1,19 +1,63 @@
-html, body {
-    height: 100%;
-}
-
 body {
     min-width: 320px;
     font-family: "Roboto", sans-serif;
 
 }
 
-.wrapper {
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
+
+.card-row {
+  display: flex; /* Используем Flexbox для горизонтального расположения */
+  gap: 16px; /* Отступ между карточками */
+  flex-wrap: wrap; /* Позволяем карточкам переноситься на новую строку при уменьшении экрана */
 }
 
-main.main {
-    flex: 1 1 auto ;
+/* Базовые стили для карточки */
+.card {
+  display: block; /* Делаем ссылку блочным элементом */
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none; /* Убираем подчеркивание у ссылки */
+  color: #000; /* Цвет текста */
+  background-color: #f0f8ff; /* Базовый фон */
+  transition: transform 0.2s ease; /* Анимация при наведении */
+  width: calc(20% - 180px); /* Ширина карточки, минус отступы. Можно изменить на нужную. */
+  box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+}
+
+/* Стили для разных цветов фона */
+.card--blue {
+  background-color: #e6f7ff;
+}
+.card--green {
+  background-color: #e6ffe6;
+}
+.card--orange {
+  background-color: #fff2e6;
+}
+
+
+/* Эффект при наведении мыши */
+.card:hover {
+  transform: translateY(-4px); /* Поднятие карточки вверх */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Тень для эффекта "поднятия" */
+}
+
+/* Стили для заголовка */
+.card h3 {
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+/* Стили для описания */
+.card p {
+  font-size: 0.9em;
+  margin: 0 0 12px 0;
+}
+
+/* Стили для иконки */
+.card img {
+  width: 100px;
+  height: auto;
+  float: right;
+ /* Выравнивание иконки по правому краю */
 }

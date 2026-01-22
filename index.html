@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,151 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-</head> 
+</head>
+
 <body>
+    <header>
+        <nav class="navbar bg-body-orange fixed-top" style="background-color: orange; ">
+            <div class="container-fluid">
+                <h1 style="color: white; margin-left: 80px;">DNS</h1>
 
-    <div class="wrapper">
+                <div style="margin-left: -725px; margin-top: -17px;">
 
-        <header class="header">
-            <div class="header-top">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="header-top-phone">
-                                <i class="fa fa-mobile" aria-hidden="true"></i>
-                                <a href="tel: +1234567890">123-345-678</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">2</div>
-                        <div class="col-md-4">3</div>
+                    <div style="margin-top: 20px;">
+                        <a href="#" style="color: white; text-decoration: none; margin-left: -250px;">Акции</a>
+                        <a href="#" style="color: white; text-decoration: none; margin-left: 60px">Магазины</a>
+                        <a href="#" style="color: white; text-decoration: none; margin-left: 60px">Доставка</a>
+                        <a href="#" style="color: white; text-decoration: none; margin-left: 60px">Вакансии</a>
+                    </div>
+                    <div class="dropdown" style="margin-left: 260px; background-color: orange; margin-top: -30px;">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="background-color: orange; border-color: orange;">
+                            Каталог
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Бытовая техника</a></li>
+                            <li><a class="dropdown-item" href="#">Смартфоны и фототехника</a></li>
+                            <li><a class="dropdown-item" href="#">Пк, ноутбуки, периферия</a></li>
+                            <li><a class="dropdown-item" href="#">Комплектующие для пк</a></li>
+                            <li><a class="dropdown-item" href="#">Дом, декор посуда</a></li>
+                            <li><a class="dropdown-item" href="#">Умный дом</a></li>
+                            <li><a class="dropdown-item" href="#">Автотовары</a></li>
+                            <li><a class="dropdown-item" href="#">Умный дом</a></li>
+                            <li><a class="dropdown-item" href="#">Инструменты и стройка</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: white;"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header" style="background-color: orange; color: white;">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
                     </div>
                 </div>
             </div>
+        </nav>
+    </header>
 
-        </header>
-        <main class="main">Content</main>
-        <footer class="footer">Foter</footer>
+    <main>
+        <div class="card-row" style="margin-top: 110px;">
+            <a href="#" class="card card--blue">
+                <h3>Каталог</h3>
+                <p>Большой выбор техники для дома и вас</p>
+                <img src="assets/img/icon-catalog.png" alt="Иконка каталога" style="width: 125px;">
+            </a>
 
-    </div>
+            <a href="#" class="card" style="background-color: #FFF3E0;">
+                <h3>DNS shorts</h3>
+                <p>короткие видео о товарах</p>
+                <span class="badge">НОВИНКА</span>
+                <img src="assets/img/short.png" alt="DNS shorts">
+            </a>
 
-    
-   
+            <a href="#" class="card" style="background-color: #fffbff;">
+                <h3>Собрать ПК</h3>
+                <p>Без проблем с совместимостью</p>
+                <img src="assets/img/pc.png" alt="Собрать ПК" style="width: 150px;">
+            </a>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+            <a href="#" class="card" style="background-color:#fffbff;">
+                <h3>Подарочные карты</h3>
+                <p>Дарите любимым</p>
+                <img src="assets/img/gift.png" alt="Подарочные карты" style="width: 150px;">
+            </a>
+
+            <a href="#" class="card" style="background-color: #ecf9ff;">
+                <h3>Рейтинг сборок ПК</h3>
+                <p>Сборки ПК от пользователей</p>
+                <img src="assets/img/pc1.png" alt="Рейтинг сборок ПК" style="width: 125px;">
+            </a>
+
+            <a href="#" class="card" style="background-color: #f6ffff;">
+                <h3>Оплата игр и сервисов</h3>
+                <p>Карты оплаты и цифровой контент</p>
+                <img src="assets/img/game.png" alt="Оплата игр и сервисов" style="width: 150px;">
+            </a>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+        </footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
