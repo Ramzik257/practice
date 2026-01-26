@@ -20,8 +20,9 @@ body {
   color: #000;
   background-color: #f0f8ff; 
   transition: transform 0.2s ease; 
-  width: calc(20% - 80px); 
+  width: calc(20% - 110px); 
   box-sizing: border-box; 
+  height: 300px;
 }
 
 
@@ -60,4 +61,225 @@ body {
   height: auto;
   float: right;
 
+}
+
+.cart {
+    margin-left: 50px;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.cart h5 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.slider {
+    width: 100px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    background-color: #f5f5f5; 
+}
+
+.slider .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.slider .slide.active {
+    opacity: 1;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.category-link {
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+
+    margin-bottom: 5px;
+}
+
+.category-link:hover {
+    transform: translateY(-3px); 
+    color: #202020;
+}
+
+
+
+.brand-slider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.slider-btn {
+    background-color: #f5f5f5;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.slider-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.slider-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    width: 855px; 
+}
+
+.slider-track {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.4s ease;
+
+    flex-shrink: 0;
+}
+
+.brand-item {
+    display: block;
+    width: 130px;
+    height: 70px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+   
+    flex-shrink: 0;
+}
+
+.brand-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.brand-item img {
+    max-width: 90%;
+    max-height: 60px;
+    object-fit: contain;
+}
+
+
+
+.product-card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    max-width: 300px; /* Можно изменить */
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-content p {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6b00; 
+}
+
+.old-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.details-btn {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+}
+
+.details-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
 }
