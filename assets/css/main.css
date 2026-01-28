@@ -202,7 +202,7 @@ body {
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     width: 100%;
-    max-width: 300px; /* Можно изменить */
+    max-width: 300px; 
 }
 
 .product-card:hover {
@@ -287,7 +287,7 @@ body {
 .cards-container {
     display: flex;
     flex-wrap: wrap;       
-    gap: 50px;             
+    gap: 40px;             
     width: 1520px;          
 }
 
